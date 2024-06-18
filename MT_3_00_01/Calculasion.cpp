@@ -61,3 +61,18 @@ Vector3 Calculation::Normalize(const Vector3& v) {
 	}
 	return backnum;
 }
+
+Vector3 Calculation::GetAdd() { return resultAdd_; }
+
+Vector3 Calculation::GetSubtract() {
+	return resultSubtract_; 
+
+}
+
+Vector3 Calculation::GetMultiply() { 
+	return resultMultiply_; }
+float Calculation::GetDot() { return resultDot_; }
+float Calculation::GetLength() { return resultLength_; }
+
+
+

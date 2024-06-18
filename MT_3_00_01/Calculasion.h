@@ -61,9 +61,15 @@ public://関数
 	/// <param name="v"></param>
 	/// <returns></returns>
 	Vector3 Normalize(const Vector3& v);
+	
+Vector3 GetAdd();
+Vector3 GetSubtract();
+Vector3 GetMultiply();
+float GetDot();
+float GetLength();
+Vector3 GetNormalize();
 
-
-private://メンバー変数
+private: // メンバー変数
 	Vector3 v1_;
 	Vector3 v2_;
 	float k_;
