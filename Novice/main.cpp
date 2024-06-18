@@ -1,5 +1,5 @@
 #include <Novice.h>
-
+#include"Matrix4x4.h"
 const char kWindowTitle[] = "GC1D_ワタナベ_リョウイチ";
 
 // Windowsアプリでのエントリーポイント(main関数)
@@ -11,6 +11,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	// キー入力結果を受け取る箱
 	char keys[256] = {0};
 	char preKeys[256] = {0};
+	Matrix4x4 m1 = {3.2f,0.7f,9.6f,4.4f,5.5f,
+	1.3f,7.8f}
 
 	// ウィンドウの×ボタンが押されるまでループ
 	while (Novice::ProcessMessage() == 0) {
