@@ -36,7 +36,15 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		/// ↓描画処理ここから
 		///
 		cal->VectorScreenPrintf(0, 0, cal->GetAdd(), "Add");
-		cal->VectorScreenPrintf(0,)
+		cal->VectorScreenPrintf(0, 13, cal->GetSubtract(), "Subtract");
+		cal->VectorScreenPrintf(0, 26, cal->GetMultiply(), "Multiply");
+		cal->VectorScreenPrintf(0, 39, cal->GetDot(), "Dot");
+		cal->VectorScreenPrintf(0, 42, cal->GetLength(), "Length");
+		cal->VectorScreenPrintf(0, 55, cal->GetNormalize(), "Normalize");
+
+
+
+
 		///
 		/// ↑描画処理ここまで
 		///

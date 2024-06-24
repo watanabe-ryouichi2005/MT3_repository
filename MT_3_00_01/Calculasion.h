@@ -46,7 +46,8 @@ public://関数
 	/// <param name="v1"></param>
 	/// <param name="v2"></param>
 	/// <returns></returns>
-	float Dot(const Vector3& v1, const Vector3& v2);
+	
+	float Dot (const Vector3& v1, const Vector3& v2);
 
 	/// <summary>
 	/// 長さ(ノルム)
