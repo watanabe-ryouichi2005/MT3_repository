@@ -1,5 +1,7 @@
 ﻿#pragma once
 #include <Vector3.h>
+static const int kColumWidth = 60;
+static const int kRowHeight = 20;
 class Calculation
 {
 

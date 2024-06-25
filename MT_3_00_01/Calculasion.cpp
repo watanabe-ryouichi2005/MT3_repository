@@ -4,8 +4,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-static const int kColumWidth = 60;
-static const int kRowHeight = 20;
+
 
 Calculation::Calculation() {
 	v1_ = { 1.0f,3.0f,-5.0f };
@@ -44,10 +43,9 @@ Vector3 Calculation::Multiply(float Scaler, const Vector3& v) {
 	return{ Scaler * v.x,Scaler * v.y,Scaler * v.z };
 }
 float Calculation::Dot(const Vector3& v1, const Vector3& v2) {
-	return  ( v1.x * v2.x + v1.y * v2.y + v1.z * v2.z
-	};
-
+	return {v1.x * v2.x + v1.y * v2.y + v1.z * v2.z};
 }
+
 float Calculation::Length(const Vector3& v) {
 	float answer = sqrtf(v.x * v.x + v.y * v.y + v.z * v.z);
 	return answer;
@@ -73,6 +71,7 @@ Vector3 Calculation::GetMultiply() {
 	return resultMultiply_; }
 float Calculation::GetDot() { return resultDot_; }
 float Calculation::GetLength() { return resultLength_; }
+Vector3 Calculation::GetNormalize() { return resultNormalize_; }
 
 
 
